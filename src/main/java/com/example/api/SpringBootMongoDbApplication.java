@@ -29,12 +29,12 @@ maxAge = 4800, allowCredentials = "false")
 @EnableConfigurationProperties({
 	FileStorageProperties.class
 })
-public class SpringBootMongoDbApplication extends SpringBootServletInitializer {
-	 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SpringBootMongoDbApplication.class);
-    }
+public class SpringBootMongoDbApplication {//extends SpringBootServletInitializer {
+//	 
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+//        return application.sources(SpringBootMongoDbApplication.class);
+//    }
  
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMongoDbApplication.class, args);
